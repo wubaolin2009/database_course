@@ -1,0 +1,272 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F79BC7D5-686B-46A9-903D-C873FE0495C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>da1</RootNamespace>
+    <AssemblyName>da1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\IrisSkin\破解版\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusInfo.Designer.cs">
+      <DependentUpon>BusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLineRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLineRun.Designer.cs">
+      <DependentUpon>ChangeLineRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverInfo.Designer.cs">
+      <DependentUpon>DriverInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchBus.Designer.cs">
+      <DependentUpon>FormSearchBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchDriver.Designer.cs">
+      <DependentUpon>FormSearchDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchLine.Designer.cs">
+      <DependentUpon>FormSearchLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchLine2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchLine2.Designer.cs">
+      <DependentUpon>FormSearchLine2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineInfo.Designer.cs">
+      <DependentUpon>LineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineUnSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineUnSet.Designer.cs">
+      <DependentUpon>LineUnSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupLine.Designer.cs">
+      <DependentUpon>SetupLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellTicket.Designer.cs">
+      <DependentUpon>SellTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Land.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Land.Designer.cs">
+      <DependentUpon>Land.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLineRun.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangeLineRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DriverInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchBus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSearchBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchDriver.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSearchDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSearchLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchLine2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSearchLine2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Land.sq-AL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Land.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineUnSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineUnSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetupLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellTicket.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SellTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Land.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Land.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TicketManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toSell.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>toSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TicketManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketManage.Designer.cs">
+      <DependentUpon>TicketManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toSell.Designer.cs">
+      <DependentUpon>toSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
